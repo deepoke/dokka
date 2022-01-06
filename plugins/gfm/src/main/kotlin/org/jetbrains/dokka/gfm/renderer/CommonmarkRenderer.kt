@@ -208,7 +208,7 @@ open class CommonmarkRenderer(
                         .trim()
                         .replace("#+ ".toRegex(), "") // Workaround for headers inside tables
                         .replace("\\\n", "\n\n")
-                        .replace("\n[\n]+".toRegex(), "<br/>")
+                        .replace("\n[\n]+".toRegex(), "<br>")
                         .replace("\n", " ")
                     )
                     append(" ")

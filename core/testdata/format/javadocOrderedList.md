@@ -13,5 +13,5 @@
 | [&lt;init&gt;](-init-.md) |
 1. Rinse
  2. Repeat
- <br/>`Bar()` |
+ <br>`Bar()` |
 
