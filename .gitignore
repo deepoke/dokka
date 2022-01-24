@@ -1,6 +1,8 @@
 *.ipr
 *.iml
 
+.DS_Store
+plugins/all-modules-page/out/*
 ### Maven template
 target/
 pom.xml.tag

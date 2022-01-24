@@ -18,14 +18,5 @@ subprojects {
         testImplementation("org.junit.jupiter:junit-jupiter:5.6.0")
     }
 
-    tasks.test {
-        useJUnitPlatform()
-        testLogging {
-            exceptionFormat = TestExceptionFormat.FULL
-            events(TestLogEvent.SKIPPED, TestLogEvent.FAILED)
-            showExceptions = true
-            showCauses = true
-            showStackTraces = true
-        }
-    }
+
 }

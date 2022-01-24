@@ -30,12 +30,3 @@ val basePluginShadowJar by tasks.register("basePluginShadowJar", ShadowJar::clas
     archiveClassifier.set("")
 }
 
-tasks.integrationTest {
-    inputs.dir(file("projects"))
-    val cliJar = tasks.getByPath(":runners:cli:shadowJar") as ShadowJar
-    environment("CLI_JAR_PATH", cliJar.archiveFile.get())
-    environment("BASE_PLUGIN_JAR_PATH", basePluginShadowJar.archiveFile.get())
-    dependsOn(cliJar)
-    dependsOn(basePluginShadowJar)
-}
-
